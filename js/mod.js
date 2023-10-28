@@ -1,26 +1,25 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "The h Tree",
+	id: "necro_h",
+	author: "lastata",
+	pointsName: "h",
 	modFiles: ["layers.js", "tree.js"],
 
-	discordName: "",
+	discordName: "lastata",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	offlineLimit: 12,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.0/a1",
+	name: "Literally h",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+	<h3>v0.0/a1</h3><br>
+		- initial commit`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -34,7 +33,7 @@ function getStartPoints(){
 
 // Determines if it should show points/sec
 function canGenPoints(){
-	return true
+	return hasUpgrade('b', 11)
 }
 
 // Calculate points/sec!
