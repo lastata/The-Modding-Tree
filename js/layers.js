@@ -17,10 +17,18 @@ addLayer("b", {
     exponent: 0.5, // Prestige currency exponent
     upgrades: {
         11: {
-            title: "Begin.",
-            description: "start gaining points",
+            title: "1",
+            description: "start gaining h",
             cost: new Decimal(1),
         },
+        12: {
+            title: "2",
+            description: "Double h gain",
+            cost: new Decimal(2),
+            
+
+        },
+        
     },
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
